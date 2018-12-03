@@ -1,0 +1,72 @@
+   97  docker ps
+  106  curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+  107  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/debian \
+  111  sudo apt-get install docker-ce
+  112  docker version
+  113  docker info
+  119  ps aux | grep docker
+  120  docker run hello-world
+  121  docker imagehs
+  122  docker images
+  127  usermod -G docker user
+  129  docker run perl
+  130  docker ps -z
+  131  docker ps -a
+  132  docker run perl
+  133  docker ps
+  134  docker rm 11c
+  135  docker ps -a
+  136  docker rm add
+  137  docker rm 0918
+  138  docker rm 011
+  139  docker ps -a
+  140  docker ps
+  141  docker network create mynet
+  142  docker run --name mydb --network mynet mariadb:latest
+  143  docker run --name mydb --network mynet -rm -d -e MYSQL_ROOT_PASSWORD=toto -e MYSQL_ALLOW_EMPTY_PASSWORD=no -e MYSQL_RANDOM_ROOT_PASSWORD=no mariadb:latest
+  144  docker run --name mydb --network mynet --rm -d -e MYSQL_ROOT_PASSWORD=toto -e MYSQL_ALLOW_EMPTY_PASSWORD=no -e MYSQL_RANDOM_ROOT_PASSWORD=no mariadb:latest
+  145  docker ps
+  146  docker ps -a
+  147  docker rm ae4
+  148  docker run --name mydb --network mynet --rm -d -e MYSQL_ROOT_PASSWORD=toto -e MYSQL_ALLOW_EMPTY_PASSWORD=no -e MYSQL_RANDOM_ROOT_PASSWORD=no mariadb:latest
+  153  docker image list
+  154  docker run perl bash
+  158  docker list
+  159  docker ps -a
+  160  docker exec 598 bash
+  161  docker rm 5987
+  163  docker run perl sh
+  164  docker run perl ls /bin
+  165  docker run perl -ti /bin/bash
+  166  docker run -ti perl  /bin/bash
+  167  docker run -ti perl --network mynet /bin/bash
+  168  docker run -ti  --network mynet perl /bin/bash
+  169  docker volume
+  170  docker volume create 
+  171  docker volume create --help
+  173  docker volume create wpvol
+  174  docker 
+  184  docker ps
+  185  docker exec -ti bash
+  186  docker ps
+  187  docker exec -ti df0 bash
+  188  docker ps
+  189  docker exec d14 bash
+  191  docker exec d14 -ti bash
+  192  docker exec -ti d14  bash
+  193  docker ps
+  194  docker exec -ti 584
+  195  docker exec -ti 584 bash
+  196  docker list
+  197  docker image
+  198  docker image l
+  199  docker image ls
+  200  docker image ls -h
+  201  docker image 
+  202  docker search
+  203  docker search -h
+  204  docker search desalpine
+  205  docker re?
+  206  docker push localhost:5000/desphp
+  209  docker push localhost:5000/desphp
+  210  history | grep docker > histo.1

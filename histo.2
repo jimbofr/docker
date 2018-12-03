@@ -1,0 +1,97 @@
+   97  docker ps
+  106  curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+  107  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/debian \
+  111  sudo apt-get install docker-ce
+  113  apt-get upgrade docker
+  114  apt-get upgrade docker
+  115  docker version
+  116  docker info
+  118  docker pull mariadb -h
+  119  docker pull mariadb 
+  120  docker pull mysql:5.6
+  121  docker pull mysql:5.6
+  122  docker pull mysql:5.6
+  123  docker pull mysql:5.6
+  125  docker ps -a
+  126  docker ps 
+  127  docker stop 8d6
+  128  docker rm 8d6
+  129  docker run --network=mynet -p 8080:80 wordpress
+  130  docker ps -a
+  131  docker ps -a
+  132  docker ps
+  133  docker run --network=mynet -p 8080:80 --rm -e WORDPRESS_DB_HOST=mydb -e WORDPRESS_DB_PASSWORD=toto wordpress
+  134  docker run --network=mynet -p 8080:80 --rm -e WORDPRESS_DB_HOST=mydb -e WORDPRESS_DB_PASSWORD=tito wordpress
+  135  docker ps
+  136  docker stop -a
+  137  docker stop 
+  138  docker stop  63
+  139  docker stop  e4
+  140  docker run --network=mynet -p 8080:80 --rm -e WORDPRESS_DB_HOST=mydb -e WORDPRESS_DB_PASSWORD=toto wordpress
+  141  docker run --network=mynet -p 8080:80 --rm -e WORDPRESS_DB_HOST=mydb -e WORDPRESS_DB_PASSWORD=toto --net=mynet wordpress
+  142  docker run --network=mynet -p 8080:80 --rm -e WORDPRESS_DB_HOST=mydb -e WORDPRESS_DB_PASSWORD=toto --net=mynet wordpress
+  143  docker run --network=mynet -p 8080:80 --rm -e WORDPRESS_DB_HOST=mydb -e WORDPRESS_DB_PASSWORD=toto --net=mynet -v wpvol:/var/www/html wordpress
+  144  docker run --network=mynet -p 8080:80 --rm -e WORDPRESS_DB_HOST=mydb -e WORDPRESS_DB_PASSWORD=toto --net=mynet -v wpvol:/var/www/html --name=mywp wordpress
+  145  docker ps -a
+  146  docker start 473
+  147  docker run --network=mynet -p 8080:80 --rm -e WORDPRESS_DB_HOST=mydb -e WORDPRESS_DB_PASSWORD=toto --net=mynet -v wpvol:/var/www/html -d wordpress
+  149  docker list
+  160  docker list
+  161  docker ps
+  162  docker run -d -p 5000:5000 --restart always --name desregistry registry:latest
+  169  docker pull alpine
+  170  docker tag alpine localhost:5000/desalpine
+  171  docker push localhost:5000/desalpine
+  172  docker search gitlab
+  173  docker pull php:apache
+  180  docker tag php:apache localhost:5000/myphpapache
+  181  docker push localhost:5000/myphpapache
+  182  docker build .
+  184  docker build .
+  185  docker build -h
+  186  docker build -t localhost:5000/desphp .
+  187  docker run -p 8080:80 localhost:5000/desphp:latest
+  188  docker run -p 8080:81 localhost:5000/desphp:latest
+  189* docker run --rm -p 8081:80 localhost:5000/desphp:latest
+  190  docker ps
+  191  docker stop
+  192  docker stop -a
+  193  docker stop 
+  194  docker stop $(docker ps -q)
+  195  docker stop $(docker rm -aq)
+  196  docker rm $(docker ps -aq)
+  197  docker build -t localhost:5000/desphp .
+  198  docker run -p 8081:80  --rm localhost:5000/desphp:latest
+  199  docker build -t localhost:5000/desphp .
+  200  docker run -p 8081:80  --rm localhost:5000/desphp:latest
+  201  docker build -t localhost:5000/desphp .
+  202  docker build -t localhost:5000/desphp:4 .
+  203  docker run -p 8081:80  --rm localhost:5000/desphp:4
+  204  docker build -t localhost:5000/desphp:4 .
+  205  docker run -p 8081:80  --rm localhost:5000/desphp:4
+  206  docker run -p 8081:80  --rm localhost:5000/desphp:4 bash
+  207  docker run -p 8081:80  --rm localhost:5000/desphp:4 ash
+  208  docker run -p 8081:80  --rm localhost:5000/desphp:4 bash
+  209  docker run -p 8081:80  --rm localhost:5000/desphp:4 bash
+  210  docker run -p 8081:80  --rm localhost:5000/desphp:4 
+  211  docker run -p 8081:80  --rm localhost:5000/desphp:4 
+  212  docker run -p 8081:80  --rm localhost:5000/desphp:4 
+  213  docker build -t localhost:5000/desphp:4 .
+  214  docker build -t localhost:5000/desphp:4 .
+  215  docker build -t localhost:5000/desphp:4 .
+  216  docker run -p 8081:80  --rm localhost:5000/desphp:4 
+  217  docker build -t localhost:5000/desphp:4 . && docker run -p 8081:80  --rm localhost:5000/desphp:4 
+  218  docker build -t localhost:5000/desphp:4 . && docker run -p 8081:80  --rm localhost:5000/desphp:4 
+  220  docker run -d -p 5000:5000 --restart always --name desregistry registry:latest
+  221  docker run -d -p 5000:5000 --restart always --name desregistry registry:latest
+  222  docker ps -a
+  223  docker ps -a
+  224  docker run -p 8081:80  --rm localhost:5000/desphp:4 
+  225  docker run -p 8081:80  --rm -d localhost:5000/desphp:4 
+  226  docker build -t localhost:5000/desphpperl:test .
+  229  git commit -m "dockerfile init"
+  252  git remote add origin https://github.com/jimbofr/docker.git
+  254  git remote add origin https://github.com/jimbofr/docker.git
+  259  history | grep docker
+  260  history | grep docker > histo.1
+  261  history | grep docker > histo.2

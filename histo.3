@@ -1,0 +1,88 @@
+   97  docker ps
+  106  curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+  107  sudo add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/debian \
+  111  sudo apt-get install docker-ce
+  112  docker version
+  113  docker info
+  119  ps aux | grep docker
+  120  docker run hello-world
+  121  docker imagehs
+  122  docker images
+  127  usermod -G docker user
+  129  docker run perl
+  130  docker ps -z
+  131  docker ps -a
+  132  docker run perl
+  133  docker ps
+  134  docker rm 11c
+  135  docker ps -a
+  136  docker rm add
+  137  docker rm 0918
+  138  docker rm 011
+  139  docker ps -a
+  140  docker ps
+  141  docker network create mynet
+  142  docker run --name mydb --network mynet mariadb:latest
+  143  docker run --name mydb --network mynet -rm -d -e MYSQL_ROOT_PASSWORD=toto -e MYSQL_ALLOW_EMPTY_PASSWORD=no -e MYSQL_RANDOM_ROOT_PASSWORD=no mariadb:latest
+  144  docker run --name mydb --network mynet --rm -d -e MYSQL_ROOT_PASSWORD=toto -e MYSQL_ALLOW_EMPTY_PASSWORD=no -e MYSQL_RANDOM_ROOT_PASSWORD=no mariadb:latest
+  145  docker ps
+  146  docker ps -a
+  147  docker rm ae4
+  148  docker run --name mydb --network mynet --rm -d -e MYSQL_ROOT_PASSWORD=toto -e MYSQL_ALLOW_EMPTY_PASSWORD=no -e MYSQL_RANDOM_ROOT_PASSWORD=no mariadb:latest
+  153  docker image list
+  154  docker run perl bash
+  158  docker list
+  159  docker ps -a
+  160  docker exec 598 bash
+  161  docker rm 5987
+  163  docker run perl sh
+  164  docker run perl ls /bin
+  165  docker run perl -ti /bin/bash
+  166  docker run -ti perl  /bin/bash
+  167  docker run -ti perl --network mynet /bin/bash
+  168  docker run -ti  --network mynet perl /bin/bash
+  169  docker volume create portainer_data
+  170  docker volume create portainer_data
+  171  docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer
+  172  docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+  173  docker run mariadb:latest
+  174  docker search mariadb
+  175  docker search perl
+  176  docker search python
+  177  docker search firefox-esr
+  178  docker search firefox-esr | grep esr
+  179  docker search firefox-esr 2>&1 | grep esr
+  180  docker search mrorgues/firefox-esr  
+  181  docker image inspect mrorgues/firefox-esr  
+  182  docker info mrorgues/firefox-esr  
+  184  docker pull wordpress -h
+  185  docker pull wordpress 
+  186  docker pull wordpress 
+  187  docker pull wordpress 
+  188  docker pull wordpress 
+  189  docker pull wordpress 
+  190  docker pull wordpress 
+  191  docker pull wordpress 
+  193  history | grep docker
+  194  docker run --rm mysql
+  195  docker run --rm mysql:5.6
+  196  docker run -e MYSQL_ROOT_PASSWORD=toto --rm mysql:5.6
+  197  docker run -e MYSQL_ROOT_PASSWORD=toto --rm -d mysql:5.6
+  198  docker ps
+  199  docker stop 0a
+  200  docker stop cd
+  201  docker run -e MYSQL_ROOT_PASSWORD=toto --rm --net mynet -d mysql:5.6
+  202  docker run -e MYSQL_ROOT_PASSWORD=toto --rm --net mynet --name=mydb -d mysql:5.6
+  203  docker list
+  204  docker ps
+  205  docker stop fb5
+  206  docker stop 6e
+  207  docker run -e MYSQL_ROOT_PASSWORD=toto --rm --net mynet --name=mydb -d mysql:5.6
+  208  docker ps
+  209  docker stop c3b
+  210  docker run -e MYSQL_ROOT_PASSWORD=toto --rm --net mynet -v mysqlvol:/var/lib/mysql --name=mydb -d mysql:5.6
+  211  docker ps
+  212  docker stop 473
+  213  docker rm 473
+  221  history | grep docker > histo.1
+  222  history | grep docker > histo.3
